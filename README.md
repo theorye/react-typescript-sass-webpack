@@ -1,1 +1,1 @@
-React, Typescript, Sass, Webpack
+React, Typescript, Sass, Webpack and more
