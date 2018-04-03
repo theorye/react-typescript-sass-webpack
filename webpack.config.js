@@ -37,10 +37,10 @@ const config = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve('dist')
+        path: path.resolve('build')
     },
     devServer: {
-        contentBase: path.resolve('dist'),  
+        contentBase: path.resolve('build'),  
         publicPath: "/",
         compress: true,
         https: true,
@@ -49,7 +49,7 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({  
-            filename: path.resolve('dist', 'index.html'),  
+            filename: path.resolve('build', 'index.html'),  
             template: path.resolve('public', 'index.html'),
             inject: false,
             hash: true           
